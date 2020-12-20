@@ -10,6 +10,7 @@ This program displays two different approaches to classify the spirals. Most imp
 
 ### Examples
 
+#### Cartesian
 Without transformation to polar space, we use progressively larger/deeper linear neural nets to classify  the points. We get unsmooth and outlandish objective functions partitioning the problem space, but they do to the job:
 
 This net has 10 hidden nodes, and sets initial weights to the value 0.5. Classification accuracy is around 93%.
@@ -26,7 +27,7 @@ While this one has practically 100% accuracy:
 
 (the code for these nets is given in the files)
 
-
+#### Polar
 
 Now we repeat the above problem but during preprocessing, convert the Cartesian-system coordinates to polar coordinates. 
 
